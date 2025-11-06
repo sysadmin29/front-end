@@ -9,7 +9,7 @@ RUN npm install
 COPY . .
 #ENV VITE_API_URL=http://localhost:8000
 #ENV VITE_API_URL=http://10.50.20.83:31788
-ENV VITE_API_URL=http://backend-staging.kmc.com
+ENV VITE_API_URL=http://backend-staging.aura.local
 
 RUN npm run build
 
