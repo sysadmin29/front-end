@@ -7,6 +7,7 @@ COPY package*.json ./
 RUN npm install
 
 COPY . .
+ENV VITE_API_URL=https://backend.aura.local
 RUN npm run build
 
 # Step 2: Serve with nginx
